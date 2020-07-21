@@ -3,9 +3,12 @@ import React from "react";
 class User extends React.Component {
 
     render() {
-        return <li>
-            { this.props.user.login }
-        </li>
+        return <div>
+            <li className="list-group-item">
+                { this.props.user.login }
+                <button className="btn btn-sm btn-primary float-right rounded-circle">X</button>
+            </li>
+        </div>
     }
 }
 

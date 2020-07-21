@@ -9,7 +9,15 @@ class UserList extends React.Component {
         );
 
         return <div>
-            <ul className="user-list">{ listUser }</ul>
+            <div className="card" style={{ width: '18rem', margin: '0 auto' }}>
+                <div className="card-header">
+                    Who to Follow
+                    <button className="btn btn-sm btn-primary float-right">Refresh</button>
+                </div>
+                <ul className="list-group list-group-flush">
+                    { listUser }
+                </ul>
+            </div>
         </div>;
     }
 }
