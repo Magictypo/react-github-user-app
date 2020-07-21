@@ -9,7 +9,6 @@ class UserList extends React.Component {
         );
 
         return <div>
-            Hello
             <ul className="user-list">{ listUser }</ul>
         </div>;
     }
